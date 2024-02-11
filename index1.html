@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+          <div class="bb">
+            <button class="cc" onclick="Clear('')">Clear</button>
+        
+            <button onclick="Calculate('/')">/</button>
+            <button onclick="Calculate('*')">*</button>
+          </div>
+            <div class="bb1">
+            <button onclick="Calculate('7')">7</button>
+            <button onclick="Calculate('8')">8</button>
+            <button onclick="Calculate('9')">9</button>
+            <button onclick="Calculate('-')">-</button>
+          </div>
+          <div class="bb3">
+            <button onclick="Calculate('4')">4</button>
+            <button onclick="Calculate('5')">5</button>
+            <button onclick="Calculate('6')">6</button>
+            <button class="cc1" onclick="Calculate('+')">+</button>
+          </div>
+        <div class="bb4">
+          <button onclick="Calculate('1')">1</button>
+          <button onclick="Calculate('2')">2</button>
+          <button onclick="Calculate('3')">3</button>
+        </div>
+            
+          <div class="bb5">
+            <button onclick="Calculate('0')">0</button>
+            <button onclick="Calculate('.')">.</button>
+        
+            
+            <button onclick="CalculateResult('=')" >=</button>
+            
+            <button onclick="Delete()">Del</button>
+          </div>
+        </div>
+    </div>
+
+    <script>
+      // document.getElementById("one").addEventListener('click',Calculate())
+      var Currentvalue ='';
+      var result = document.getElementById("result")
+         
+          function Calculate(x){
+            Currentvalue +=x;
+            result.value=Currentvalue;
+          }
+          function CalculateResult(){
+            result.value = eval(Currentvalue);
+          }
+          function Clear() {
+            Currentvalue =''
+            result.value = Currentvalue;
+          }
+          function Delete(){
+              Currentvalue = Currentvalue.slice(0, -1);
+              result.value = Currentvalue;
+           }
+    </script>   
+</body>
+</html>

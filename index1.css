@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculator {
+    width: 300px;
+    text-align: center;
+    background-color:rgba(245, 238, 238, 0.817);
+    border-radius: 15px;
+    padding: 50px;
+    border-style: solid;
+    border-color: #f57d7e;
+    
+  }
+  
+  #result {
+   margin-top: 5px;
+    margin-bottom: 30px;
+    width:270px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px rgb(192, 194, 195);
+    font-size: 1.5em;
+  }
+  
+  .buttons {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    
+    gap: 10px;
+    align-items: center;
+  }
+  
+  button {
+  
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    /* background-color:whitesmoke; */
+    color:black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(192, 194, 195);
+    padding: 10px;
+  }
+  .buttons .cc{
+    background-color: #f57d7e;
+    color:white;
+    font-size: 1.2em;
+    width: 100px;
+  }
+  .bb1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    gap: 10px;
+    align-items: center;
+  }
+  .bb{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    gap: 10px;
+    align-items: center;
+  }
+  .bb3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+    gap: 10px;
+    align-items: center; 
+  }
+  .bb4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    gap: 10px;
+    align-items: center; 
+   
+  }
+  .bb5{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+    gap: 10px;
+    align-items: center; 
+   
+  }
+   
